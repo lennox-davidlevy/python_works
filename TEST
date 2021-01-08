@@ -1,0 +1,19 @@
+ 1. [:!command](:!cmd) executes an external command.
+
+     Some useful examples are:
+     `:!ls`{vim}              -  shows a directory listing
+     `:!rm FILENAME`{vim}     -  removes file FILENAME
+
+ 2. [:w](:w) FILENAME             writes the current Vim file to disk with
+                            name FILENAME.
+
+ 3. [v](v)  motion  :w FILENAME   saves the Visually selected lines in file
+                             FILENAME.
+
+ 4. [:r](:r) FILENAME             retrieves disk file FILENAME and puts it
+                            below the cursor position.
+
+ 5. [:r !dir](:r!)                reads the output of the dir command and
+                           puts it below the cursor position.
+
+ 6. :w >> /foo/TEST to append to file
