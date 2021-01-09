@@ -26,8 +26,8 @@ for idx, alien in enumerate(aliens):
 
 for alien in list_of_aliens:
     color = alien["characteristcs"]["color"]
-    speed = alien["characteristcs"]["speed"]
-    points = alien["characteristcs"]["points"]
+    
+    
     if color == "red":
         alien["characteristcs"]["color"] = "blue"
         alien["characteristcs"]["speed"] = "super_fast"
@@ -52,3 +52,8 @@ for alien in list_of_aliens[:10]:
 # for idx, alien in enumerate(aliens):
 #    name = "alien_" + str(idx)
 #    print(f"{name}: {alien}\n")
+
+
+
+
+

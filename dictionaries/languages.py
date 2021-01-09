@@ -59,3 +59,19 @@ for name in some_people:
 #    print(language.title())
 # for language in set(favorite_languages.values()):
 #    print(language.title())
+
+new_favorite_languages = {
+    "jen": ["python", "javascript"],
+    "john": ["python", "go", "javascript"],
+    "jack": ["go"],
+    "johnny": ["c++", "swift,"],
+}
+# for name, languages in new_favorite_languages.items():
+#    print(f"\n{name.title()}'s favorite language(s) are:")
+#    for idx, language in enumerate(languages):
+#        print(f"\t{idx + 1}: {language.title()}")
+new_dictionary = {1: "value", 2: "value", 3: "value", 4: "value"}
+# traverse dictionary, first value is key, next is value, must use items() method on dictionary
+for key, value in new_dictionary.items():
+    print(f"key: {key}")
+    print(f"value: {value}")
