@@ -1,4 +1,6 @@
 animal_list = []
+hello = {"hello": "hello"}
+fantastic = {"fantastic": "fantastic"}
 
 
 def describe_pet(pet_name, animal_type):
