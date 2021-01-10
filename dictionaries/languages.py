@@ -1,25 +1,25 @@
-favorite_languages = {
-    "jen": "python",
-    "john": "python",
-    "jack": "go",
-    "johnny": "c++",
-    "betty": "javascript",
-    "tina": "Java",
-    "tracey": "mind-grapes",
-    "boob": "python",
-    "hool": "c",
-    "robby": "go",
-    "profla": "c++",
-    "babab": "javascript",
-    "frroola": "Java",
-    "jenna": "mind-grapes",
-}
-some_people = ["jim", "jack", "tina", "johnny", "bob"]
-for name in some_people:
-    if name in favorite_languages:
-        print(f"Thank you {name.title()} for taking the poll!")
-    else:
-        print(f"Please, {name.title()}, take our poll!")
+# favorite_languages = {
+# "jen": "python",
+# "john": "python",
+# "jack": "go",
+# "johnny": "c++",
+# "betty": "javascript",
+# "tina": "Java",
+# "tracey": "mind-grapes",
+# "boob": "python",
+# "hool": "c",
+# "robby": "go",
+# "profla": "c++",
+# "babab": "javascript",
+# "frroola": "Java",
+# "jenna": "mind-grapes",
+# }
+# some_people = ["jim", "jack", "tina", "johnny", "bob"]
+# for name in some_people:
+# if name in favorite_languages:
+# print(f"Thank you {name.title()} for taking the poll!")
+# else:
+# print(f"Please, {name.title()}, take our poll!")
 
 
 # def return_favorite_language(name):
