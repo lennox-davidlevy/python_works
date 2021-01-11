@@ -36,6 +36,16 @@ class Car:
             "message": f"{self.model.title()} refueled!",
         }
 
+    def get_current_range(self):
+        current_range = self.remaining_fuel * self.miles_per_gallon
+        print(f"Current range: {current_range}")
+        return current_range
+
+    def get_max_range(self):
+        max_range = self.fuel_tank * self.miles_per_gallon
+        print(f"Max range: {max_range}")
+        return max_range
+
     def distance_traveled(self, distance):
         fuel_consumed = distance / self.miles_per_gallon
         refuels = math.floor(fuel_consumed / self.fuel_tank)
@@ -49,7 +59,6 @@ class Car:
         minutes = round((time_driving_at_top_speed % 1) * 60)
         time_driving_at_top_speed = int(time_driving_at_top_speed)
         printed_time = f"{time_driving_at_top_speed} hrs, {minutes} min"
-        print(f"MINUTES: {minutes}")
         report = {
             "fuel_remaing": self.remaining_fuel,
             "refuels_for_trip": refuels,
