@@ -17,3 +17,12 @@ class Battery:
     def update_battery(self, n):
         self.remaining_battery = n
         return self.remaining_battery
+
+    def upgrade_battery(self, n):
+        if n > self.battery_size:
+            print(f"Battery size updgraded from {self.battery_size}kWh to {n}kWh")
+            self.battery_size = n
+            return
+        else:
+            print(f"current battery has a larger capacity")
+            return
