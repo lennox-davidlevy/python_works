@@ -29,7 +29,11 @@ class Dice:
         return self.rolls_history
 
 
-new_game = Dice(10, 10)
+# new_game = Dice(10, 10)
+# for i in range(0, 11):
+#    print(new_game.roll_dice())
+# new_game.show_roll_history()
+twenty_sided_game = Dice(number_of_sides=20)
 for i in range(0, 11):
-    print(new_game.roll_dice())
-new_game.show_roll_history()
+    print(twenty_sided_game.roll_dice())
+twenty_sided_game.show_roll_history()
