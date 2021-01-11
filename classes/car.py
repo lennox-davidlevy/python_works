@@ -45,13 +45,17 @@ class Car:
             refuels += 1
             self.remaining_fuel = self.fuel_tank - abs(self.remaining_fuel)
         self.set_odometer(distance)
-        time_driving_at_top_speed = distance / self.top_speed
+        time_driving_at_top_speed = round((distance / self.top_speed), 2)
+        minutes = round((time_driving_at_top_speed % 1) * 60)
+        time_driving_at_top_speed = int(time_driving_at_top_speed)
+        printed_time = f"{time_driving_at_top_speed} hrs, {minutes} min"
+        print(f"MINUTES: {minutes}")
         report = {
             "fuel_remaing": self.remaining_fuel,
             "refuels_for_trip": refuels,
             "odometer_reading": self.get_odometer_reading(),
             "distance_traveled_trip": distance,
-            "time_driving_at_top_speed": time_driving_at_top_speed,
+            "time_driving_at_top_speed": printed_time,
         }
 
         return report
