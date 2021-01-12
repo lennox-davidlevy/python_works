@@ -10,6 +10,7 @@ filename = "programming.txt"
 # with open(filename, "w") as file_object:
 #    file_object.write("i love programming.\n")
 #    file_object.write("i love lili and lulu.\n")
+# this appends txt document
 with open(filename, "a") as file_object:
     file_object.write("i love gummies.\n")
     file_object.write("and i love you.\n")
