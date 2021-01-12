@@ -1,4 +1,5 @@
 from random import randint
+from time import time
 
 
 class Lotto:
@@ -21,16 +22,21 @@ class Lotto:
 
     def attempt_to_win(self):
         active_flag = True
+        start = time()
         while active_flag:
             temp_play = self.create_play()
             self.number_of_tries += 1
             if temp_play == self.winning_lotto:
+                time_elapsed = round(time() - start)
                 active_flag = False
-                print(f"It took {self.number_of_tries} to win!")
+                print(
+                    f"It took {self.number_of_tries} and {time_elapsed} seconds to win!"
+                )
         return {
             "winning_lotto": self.winning_lotto,
             "winning_play": temp_play,
             "number_of_tries": self.number_of_tries,
+            "time_elapsed": time_elapsed,
         }
 
 
